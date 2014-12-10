@@ -1,4 +1,4 @@
-int largestPrimeFactor(long num) {
+int LargestPrimeFactor(long num) {
     
     int i;
     
