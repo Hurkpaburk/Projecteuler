@@ -1,4 +1,4 @@
-int multiplesOfThreeAndFive(int num)
+int MultiplesOfThreeAndFive(int num)
 {
     int sum = 0;
     int i;
