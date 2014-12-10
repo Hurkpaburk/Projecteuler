@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int smallestMultiple(int num) {
+int SmallestMultiple(int num) {
     
     int i;
     int number = num;
