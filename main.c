@@ -13,4 +13,6 @@ int main() {
     result = largestPrimeFactor(600851475143);
     printf("Result of problem 3: %d\n",result);
     
+    result = largestPalindromeProduct(3);
+    printf("Result of problem 4: %d\n",result);
 }
