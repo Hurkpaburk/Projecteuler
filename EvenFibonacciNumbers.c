@@ -1,4 +1,4 @@
-int evenFibonacciNumbers(int num) {
+int EvenFibonacciNumbers(int num) {
     int sum = 0;
     int prevNum = 1;
     int currNum = 2;
