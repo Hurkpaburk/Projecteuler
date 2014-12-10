@@ -1,4 +1,4 @@
-int largestPalindromeProduct(double num) {
+int LargestPalindromeProduct(double num) {
     
     int i,j,paly;
     int min = pow(10,num-1);
