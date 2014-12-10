@@ -15,4 +15,7 @@ int main() {
     
     result = largestPalindromeProduct(3);
     printf("Result of problem 4: %d\n",result);
+    
+    int result = smallestMultiple(20);
+    printf("Result of problem 5: %d\n",result);
 }
