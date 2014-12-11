@@ -18,4 +18,11 @@ int main() {
     
     int result = SmallestMultiple(20);
     printf("Result of problem 5: %d\n",result);
+    
+    int result = SumSquareDifference(100);
+    printf("Result of problem 6: %d\n",result);
+    
+    int result = StPrime(10001);
+    printf("Result of problem 7: %d\n",result);
+ 
 }
