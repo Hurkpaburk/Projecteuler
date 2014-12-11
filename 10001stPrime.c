@@ -1,25 +1,33 @@
 #include <stdio.h>
 #include <math.h>
+#include <string.h>
 
-int main() {
+int StPrime(int num) {
     
-    int result = 10001stPrime(10001);
-    printf("Result of problem 7: %d\n",result);
-    
-}
-
-int 10001stPrime(int num) {
-    
-    int i = 1;
+    int i;
     int j = 3;
-    int primes[num];
-    primes[0] = 2;
     
-    while (i != num) {
-        if (j/)
-        
-        j = j+2;
+    int primes[num];
+    for (i=0;i<num;i++) {
+        primes[i] = 0;
     }
-        
- return num;
+    
+    primes[0] = 2;
+    primes[1] = 3;
+    i = 1;
+    int k, flag;
+    while (i != num) {
+        j = j+2;
+        flag = 0;
+        for (k=0;k<i;k++) {
+            if (j%primes[k] == 0) {
+                flag = 1;
+            }
+        }
+        if (flag == 0) {
+            primes[i] = j;
+            i = i+1;
+        }
+    }
+    return primes[num-1];
 }
