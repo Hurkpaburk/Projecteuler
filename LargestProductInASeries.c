@@ -1,8 +1,6 @@
-// ProjectEuler.cpp : Defines the entry point for the console application.
-//
 
-#include "stdafx.h"
 #include "stdio.h"
+#include "stdlib.h"
 
 
 int main()
@@ -12,9 +10,9 @@ int main()
 }
 
 int LargestProductInASeries() {
-	
+
 	int product = 0;
-	char numbers[1000] = 
+	char numbers[] =
 	"73167176531330624919225119674426574742355349194934"
 	"96983520312774506326239578318016984801869478851843"
 	"85861560789112949495459501737958331952853208805511"
@@ -36,16 +34,20 @@ int LargestProductInASeries() {
 	"05886116467109405077541002256983155200055935729725"
 	"71636269561882670428252483600823257530420752963450";
 
+
+
 	int i = 13;
-	int temp;
+	int j;
 	while (i != strlen(numbers)) {
-		int j= i-13;
-		for (j=1;j<=13;j++) {
-			if (j == 0) {
+
+		int temp = 1;
+		for (j=i-13;j<=i;j++) {
+			if (numbers[j] == 0 || numbers[i] == 0) {
 				temp = 0;
 				break;
 			}
-			temp = temp*j;
+			temp = temp*numbers[j];
+			printf("*** %d *** %d ***\n",atoi(numbers[j]),i);
 		}
 
 		if (temp > product) {
